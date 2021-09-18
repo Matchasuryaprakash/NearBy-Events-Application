@@ -1,0 +1,19 @@
+.Home{
+  padding-top: 50px;
+  background-color: cornsilk;
+  padding: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+ul#menu li {
+    display:inline;
+    text-decoration: none;
+  }
+#menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    list-style: none;
+    margin-bottom: 50px;
+    
+  }

@@ -1,0 +1,52 @@
+.contactListDisplay{
+    list-style-type: none;
+}
+.createNewContactButton{
+    color: black;
+    background-color: green;
+}
+.contactMenuCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.ContactListItemLabel{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.ContactListItem{
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.addEvent{
+    margin-top: 20px;
+    border-radius: 75%;
+    background-color: antiquewhite;
+    color: cadetblue;
+    padding: 20px;
+}
+
+.contactName{
+ color: chocolate;
+ flex: 1;
+ float: left;
+}
+
+.EditContact{
+    color: #5c56bb;
+    padding: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+.DeleteContact{
+    color: red;
+    padding: 15px;
+    font-size: medium;
+    cursor: pointer;
+    float: right;
+}
