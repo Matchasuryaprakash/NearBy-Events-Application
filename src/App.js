@@ -3,7 +3,9 @@ import EventHome from './EventHome';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
 import {GlobalProvider} from './GlobalState';
-import EventList from './EventList'
+import EventList from './EventList';
+import UpComingEvents from './UpComingEvents';
+import NearByEvents from './NearByEvents';
 
 function App() {
   return (
@@ -14,8 +16,8 @@ function App() {
         <EventHome />
         <Switch>
           <Route path="/" exact component={EventList} />
-          {/* <Route path="/contactList" exact component={contactList} />
-          <Route path="/friendCircle" exact component={FriendCircle} /> */}
+          <Route path="/upcommingEventtList" exact component={UpComingEvents} />
+          <Route path="/nearByEvents" exact component={NearByEvents} /> 
         </Switch>
       </BrowserRouter>
       </GlobalProvider>
