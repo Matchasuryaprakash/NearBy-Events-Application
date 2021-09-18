@@ -48,7 +48,7 @@ const  EventList = () => {
           <li key ={i}>
             <div className="contactMenuCard">
               <div className="contactName">{d.EventName} </div>
-              <div className="contactName">{d.EventTime} </div>
+              <div className="contactName">{new Date(d.EventTime).toLocaleString()} </div>
               <div className="contactName">{d.EventLocation} </div>
               <div className="contactNumber">{d.EventCategory} <div className="DeleteContact" onClick={()=>removeEvents(d.EventName)}> Delete Event</div></div>
             </div>
@@ -60,7 +60,7 @@ const  EventList = () => {
           <li key ={i}>
             <div className="contactMenuCard">
               <div className="contactName">{d.EventName} </div>
-              <div className="contactName">{d.EventTime} </div>
+              <div className="contactName">{new Date(d.EventTime).toLocaleString()} </div>
               <div className="contactName">{d.EventLocation} </div>
               <div className="contactNumber">{d.EventCategory} <div className="DeleteContact" onClick={()=>removeEvents(d.EventName)}> Delete Event</div></div>
             </div>

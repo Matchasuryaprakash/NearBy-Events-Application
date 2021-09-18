@@ -5,9 +5,11 @@ import {GlobalContext} from './GlobalState';
 function UpComingEvents() {
 
     const { events  } = useContext(GlobalContext);
+    let today = new Date()
     let filterList = events.length !== 0 ? events.filter(obj =>  new Date(obj['EventTime']) > new Date() ):[]
   return (
     <div className="UpComingEvents">
+        <div className="TodayDate">{`TodayDate ---- ${today.toLocaleDateString("en-US")}`}</div>  
         <div>UpComingEvents</div>
         <ul>
         {
@@ -16,11 +18,11 @@ function UpComingEvents() {
           <li key ={i}>
             <div className="contactMenuCard">
               <div className="contactName">{d.EventName} </div>
-              <div className="contactName">{d.EventTime} </div>
+              <div className="contactName">{new Date(d.EventTime).toLocaleString()} </div>
               <div className="contactName">{d.EventLocation} </div>
               <div className="contactNumber">{d.EventCategory}</div>
             </div>
-          </li> ): null 
+          </li> ): <div>NO Upcomming Events</div> 
           } 
 
         </ul>
